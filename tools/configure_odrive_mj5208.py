@@ -27,7 +27,7 @@ print("Reconnecting to ODrive...")
 odrv0 = odrive.find_any()
 
 print(f"Configuring CAN... (Node ID: {can_id})")
-odrv0.config.enable_can_a = True
+#odrv0.config.enable_can_a = True
 odrv0.can.config.baud_rate = 1_000_000
 odrv0.axis0.config.can.node_id = can_id
 odrv0.axis0.config.can.version_msg_rate_ms = 0
